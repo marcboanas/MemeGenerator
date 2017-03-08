@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Meme Edit View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemeGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MemeEditViewController" customModule="MemeGenerator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -27,6 +27,9 @@
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U57-ZM-76D" userLabel="Toolbar Top">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EE0-Xg-Tks"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem enabled="NO" systemItem="action" id="OFK-YX-st7">
                                         <connections>
@@ -43,6 +46,9 @@
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdB-bZ-6ob" userLabel="Toolbar Bottom">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Vgp-vz-frh"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4ty-1Y-pxT"/>
                                     <barButtonItem systemItem="camera" id="cMF-Gi-gLi">
@@ -73,22 +79,22 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OdB-bZ-6ob" firstAttribute="top" secondItem="Eh8-L6-Qs1" secondAttribute="bottom" id="6xT-we-jqg"/>
+                            <constraint firstItem="Eh8-L6-Qs1" firstAttribute="top" secondItem="U57-ZM-76D" secondAttribute="bottom" id="Ccu-BH-KfB"/>
+                            <constraint firstItem="6gU-5q-g3k" firstAttribute="top" secondItem="Eh8-L6-Qs1" secondAttribute="bottom" constant="-58" id="Ioc-xz-nam"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OdB-bZ-6ob" secondAttribute="bottom" id="LQY-Lc-bba"/>
                             <constraint firstItem="bsv-2G-DDw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NQS-vS-g5H"/>
                             <constraint firstItem="6gU-5q-g3k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NV6-T1-O1B"/>
                             <constraint firstAttribute="trailing" secondItem="OdB-bZ-6ob" secondAttribute="trailing" id="UGC-Um-Owf"/>
-                            <constraint firstAttribute="trailing" secondItem="U57-ZM-76D" secondAttribute="trailing" id="UzE-kZ-mtf"/>
+                            <constraint firstItem="U57-ZM-76D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wf4-kd-wIt"/>
                             <constraint firstItem="bsv-2G-DDw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YjC-aU-VI2"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Eh8-L6-Qs1" secondAttribute="leading" id="crA-KZ-7Pb"/>
                             <constraint firstItem="6gU-5q-g3k" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fHb-ZV-LgZ"/>
-                            <constraint firstItem="OdB-bZ-6ob" firstAttribute="top" secondItem="6gU-5q-g3k" secondAttribute="bottom" constant="10" id="hXH-rY-GWq"/>
-                            <constraint firstItem="bsv-2G-DDw" firstAttribute="top" secondItem="U57-ZM-76D" secondAttribute="bottom" constant="10" id="hZe-Ao-IJU"/>
+                            <constraint firstItem="OdB-bZ-6ob" firstAttribute="top" secondItem="Eh8-L6-Qs1" secondAttribute="bottom" id="hGB-hl-87w"/>
+                            <constraint firstAttribute="trailing" secondItem="U57-ZM-76D" secondAttribute="trailing" id="hHT-Ua-KA0"/>
+                            <constraint firstItem="Eh8-L6-Qs1" firstAttribute="top" secondItem="bsv-2G-DDw" secondAttribute="bottom" constant="-58" id="hcP-ZH-hVD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Eh8-L6-Qs1" secondAttribute="trailing" id="qa9-IK-8ry"/>
                             <constraint firstItem="OdB-bZ-6ob" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rhe-YK-Siy"/>
-                            <constraint firstItem="U57-ZM-76D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rnS-Yp-CNu"/>
-                            <constraint firstItem="Eh8-L6-Qs1" firstAttribute="top" secondItem="U57-ZM-76D" secondAttribute="bottom" id="uAO-j4-F5L"/>
-                            <constraint firstItem="U57-ZM-76D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vjf-c0-jHQ"/>
+                            <constraint firstItem="U57-ZM-76D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yx9-ih-UCW"/>
                         </constraints>
                     </view>
                     <connections>

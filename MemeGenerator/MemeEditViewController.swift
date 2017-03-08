@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MemeEditViewController.swift
 //  MemeGenerator
 //
 //  Created by Marc Boanas on 07/03/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class MemeEditViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     // Properties
     var memesArray = [Meme]()
@@ -72,7 +72,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let imagePicked = info[UIImagePickerControllerEditedImage] as? UIImage {
-            imagePickerView.contentMode = .scaleAspectFill
+            imagePickerView.contentMode = .scaleAspectFit
             imagePickerView.image = imagePicked
         }
         shareButton.isEnabled = true
