@@ -12,6 +12,8 @@
 		0348B24B1E6EC348004EE452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0348B2491E6EC348004EE452 /* Main.storyboard */; };
 		0348B24D1E6EC348004EE452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0348B24C1E6EC348004EE452 /* Assets.xcassets */; };
 		0348B2501E6EC348004EE452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0348B24E1E6EC348004EE452 /* LaunchScreen.storyboard */; };
+		0348B25B1E6F5321004EE452 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348B25A1E6F5321004EE452 /* CustomTextField.swift */; };
+		0348B25E1E700026004EE452 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348B25D1E700026004EE452 /* Meme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0348B24C1E6EC348004EE452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0348B24F1E6EC348004EE452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0348B2511E6EC348004EE452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0348B25A1E6F5321004EE452 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0348B25D1E700026004EE452 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		0348B2441E6EC348004EE452 /* MemeGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				0348B25C1E6FFEBE004EE452 /* Models */,
+				0348B2571E6F51D8004EE452 /* Custom Classes */,
 				0348B2451E6EC348004EE452 /* AppDelegate.swift */,
 				0348B2471E6EC348004EE452 /* ViewController.swift */,
 				0348B2491E6EC348004EE452 /* Main.storyboard */,
@@ -62,6 +68,22 @@
 				0348B2511E6EC348004EE452 /* Info.plist */,
 			);
 			path = MemeGenerator;
+			sourceTree = "<group>";
+		};
+		0348B2571E6F51D8004EE452 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0348B25A1E6F5321004EE452 /* CustomTextField.swift */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		0348B25C1E6FFEBE004EE452 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0348B25D1E700026004EE452 /* Meme.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0348B2481E6EC348004EE452 /* ViewController.swift in Sources */,
+				0348B25E1E700026004EE452 /* Meme.swift in Sources */,
+				0348B25B1E6F5321004EE452 /* CustomTextField.swift in Sources */,
 				0348B2461E6EC348004EE452 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
